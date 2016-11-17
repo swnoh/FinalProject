@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.cst2335.finalproject.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/content_main"
+        android:id="@+id/include" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/livingroom"
+        android:id="@+id/main_image_livingroom"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/kitchen"
+        android:layout_below="@+id/main_image_livingroom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/main_image_kitchen" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/house"
+        android:layout_below="@+id/main_image_kitchen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/main_image_house" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/automobile"
+        android:layout_below="@+id/main_image_house"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/main_image_automobile" />
+
+    <TextView
+        android:text="@string/main_automobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_text_automobile"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@+id/main_image_automobile"
+        android:layout_alignStart="@+id/main_text_livingroom" />
+
+    <TextView
+        android:text="@string/main_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_text_house"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/main_image_automobile"
+        android:layout_alignStart="@+id/main_text_automobile" />
+
+    <TextView
+        android:text="@string/main_kitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_text_kitchen"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/main_image_house"
+        android:layout_toEndOf="@+id/include" />
+
+    <TextView
+        android:text="@string/main_livingroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_text_livingroom"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/main_image_kitchen"
+        android:layout_toEndOf="@+id/include" />
+
+    </RelativeLayout>
+</ScrollView>
