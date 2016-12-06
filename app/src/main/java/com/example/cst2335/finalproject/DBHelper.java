@@ -8,7 +8,7 @@ import android.util.Log;
 
 /**
  * Contain database information of the temperature schedule and process the creation, upgrade,
- * and downgrade of the database.
+ * and downgrade of the database .
  ********************************************************************************/
 
 public class DBHelper extends SQLiteOpenHelper {
