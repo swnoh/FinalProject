@@ -22,7 +22,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="120dp"
         app:srcCompat="@drawable/livingroom"
         android:id="@+id/main_image_livingroom"
         android:scaleType="centerCrop"
@@ -31,7 +31,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="120dp"
         app:srcCompat="@drawable/kitchen"
         android:layout_below="@+id/main_image_livingroom"
         android:layout_centerHorizontal="true"
@@ -41,7 +41,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="120dp"
         app:srcCompat="@drawable/house"
         android:layout_below="@+id/main_image_kitchen"
         android:layout_centerHorizontal="true"
@@ -51,7 +51,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="120dp"
         app:srcCompat="@drawable/automobile"
         android:layout_below="@+id/main_image_house"
         android:layout_centerHorizontal="true"

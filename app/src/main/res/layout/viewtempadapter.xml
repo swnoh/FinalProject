@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:text="ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/text_ID" />
+
+    <TextView
+        android:text="Time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/text_Time" />
+
+    <TextView
+        android:text="Temp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/text_Temp" />
+</LinearLayout>
