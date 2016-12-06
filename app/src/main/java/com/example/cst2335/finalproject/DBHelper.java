@@ -18,7 +18,7 @@ public class DBHelper extends SQLiteOpenHelper {
      *******************************************************************************************/
         protected static final String ACTIVITY_NAME = "DBHelper_Activity";
         protected static final String DATABASE_NAME = "TempSchedule.db";  //db file
-        protected static final int DATABASE_VERSION = 3;
+        protected static final int DATABASE_VERSION = 4;
         protected static final String TABLE_NAME = "TempScheduleTable";
 
         /* Column names */
