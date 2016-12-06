@@ -10,9 +10,4 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.cst2335.finalproject.House">
 
-    <TextView
-        android:text="House Activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3" />
 </RelativeLayout>

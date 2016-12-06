@@ -1,4 +1,4 @@
-<resources>
+<resources>     <!-- Main Screen -->
     <string name="app_name">FinalProject</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">Smart Remote</string>
@@ -6,5 +6,32 @@
     <string name="main_house">House</string>
     <string name="main_kitchen">Kitchen</string>
     <string name="main_livingroom">Living Room</string>
+
+    <!-- Garage Door -->
+    <string name="openGarageButton">Open Garage</string>
+    <string name="closeGarageButton">Close Garage</string>
+    <string name="lightON_OFF">Light(ON/OFF)</string>
+
+    <!-- House Temperature -->
+    <string name="houseTempLabel">Your house is currently set at</string>
+    <string name="houseTempTextview">House Temperature</string>
+    <string name="tempSettingButton">Temperature Setting</string>
+    <string name="TemperatureSettingLabel">Temperature Setting</string>
+    <string name="setTimeButton">Select a time</string>
+    <string name="setTempButton">Select a temperature</string>
+    <string name="createSchedule">Insert new temperature schedule</string>
+    <string name="setTempSchedule">View schedule list</string>
+    <string name="delete">Delete temperature schedule</string>
+    <string name="deleteLabel">Enter key id to delete a temperature schedule</string>
+
+
+    <!-- Outside Weather -->
+    <string name="currentTempTextview">Current Temperature</string>
+    <string name="minTempTextview">Minimum Temperature</string>
+    <string name="maxTempTextview">Maximum Temperature</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 </resources>

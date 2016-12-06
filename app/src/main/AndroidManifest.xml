@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cst2335.finalproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,8 +22,24 @@
         </activity>
         <activity android:name=".LivingRoom" />
         <activity android:name=".Kitchen" />
-        <activity android:name=".House" />
+        <activity android:name=".House">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
         <activity android:name=".Automobile" />
+        <activity android:name=".OutsideWeather" />
+        <activity android:name=".GarageDoor" />
+        <activity android:name=".HouseSetting" />
+        <activity android:name=".TemperatureSetting" />
+        <activity android:name=".TimeSchedule" />
+        <activity android:name=".TempSchedule" />
+        <activity android:name=".DBHelper" />
+        <activity android:name=".ViewTempSchedule" />
     </application>
 
 </manifest>
