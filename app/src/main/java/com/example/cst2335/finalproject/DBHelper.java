@@ -35,7 +35,7 @@ public class DBHelper extends SQLiteOpenHelper {
         /**
         * Default Constructor
         ***************************************************************************/
-        public DBHelper() { }
+//        public DBHelper() { }
 
         /**
          * Constructor
