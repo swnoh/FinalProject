@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">파이널 프로젝트</string>
+    <string name="action_settings">설정</string>
+    <string name="title_activity_main">스마트 리모트</string>
+    <string name="main_automobile">자동차</string>
+    <string name="main_house">집</string>
+    <string name="main_kitchen">부엌</string>
+    <string name="main_livingroom">거실</string>
+    <string name="title_activity_automobile_temperature">자동차 온도설정</string>
+    <string name="title_automobilelist_list">자동차 설정목록</string>
+    <string name="title_automobilelist_detail">자동차 설정목록 상세페이지</string>
+    <string name="title_activity_automobile_temp">자동차 온도설정</string>
+    <string name="a_text_drive">운전</string>
+    <string name="a_text_stop">정지</string>
+    <string name="a_text_driving">운전</string>
+    <string name="a_text_check_oil">Check Oil</string>
+    <string name="a_text_headlight">헤드라이트</string>
+    <string name="a_text_turn_on">켜짐</string>
+    <string name="a_text_turn_off">꺼짐</string>
+    <string name="a_text_normal">하향등</string>
+    <string name="a_text_high">상향등</string>
+    <string name="a_text_dimmable_light">라이트 설정</string>
+    <string name="a_text_reset">리셋</string>
+    <string name="a_text_km_h">km/h</string>
+    <string name="a_text_fm">FM</string>
+    <string name="a_text_front">전면</string>
+    <string name="a_text_back">후면</string>
+
+</resources>

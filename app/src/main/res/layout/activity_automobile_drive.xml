@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.43">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="96dp"
+            android:id="@+id/a_drive_text_value"
+            android:textSize="50sp"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="50sp"
+            android:text="0" />
+
+        <TextView
+            android:text="  km"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:id="@+id/a_drive_text_km"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80sp"
+            android:gravity="bottom"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <ToggleButton
+        android:text="@string/a_text_drive"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/a_drive_toggle"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textOn="@string/a_text_stop"
+        android:textOff="@string/a_text_driving"
+        android:textSize="30sp"
+        android:layout_marginTop="50sp"/>
+
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/oilcheck"
+        android:id="@+id/imageView"
+        android:layout_gravity="right"
+        android:layout_marginTop="40sp"/>
+
+    <TextView
+        android:text="@string/a_text_check_oil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/a_drive_text_oil"
+        android:layout_gravity="right"
+        android:layout_marginRight="20sp"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

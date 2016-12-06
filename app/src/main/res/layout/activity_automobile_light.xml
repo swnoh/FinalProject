@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <TextView
+        android:id="@+id/a_light_text_headlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="@string/a_text_headlight"
+        android:textSize="35sp" />
+
+    <ToggleButton
+        android:id="@+id/a_radio_toggleButton"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textOn="@string/a_text_turn_on"
+        android:textOff="@string/a_text_turn_off" />
+
+    <RadioGroup
+        android:id="@+id/a_radio_btn_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <RadioButton
+            android:id="@+id/a_radio_btn_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/a_text_normal" />
+
+        <RadioButton
+            android:id="@+id/a_radio_btn_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:text="@string/a_text_high" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/a_light_text_dim_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton2"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="@string/a_text_dimmable_light"
+        android:textSize="35sp" />
+
+
+    <SeekBar
+        android:id="@+id/a_light_seekBar"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="50dp" />
+
+
+</LinearLayout>

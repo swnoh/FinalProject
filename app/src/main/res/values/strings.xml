@@ -6,5 +6,24 @@
     <string name="main_house">House</string>
     <string name="main_kitchen">Kitchen</string>
     <string name="main_livingroom">Living Room</string>
+    <string name="title_activity_automobile_temperature">AutomobileTemperature</string>
+    <string name="title_automobilelist_list">AutomobileLists</string>
+    <string name="title_automobilelist_detail">AutomobileList Detail</string>
+    <string name="title_activity_automobile_temp">AutomobileTemp</string>
+    <string name="a_text_drive">Drive</string>
+    <string name="a_text_stop">Stop</string>
+    <string name="a_text_driving">Driving</string>
+    <string name="a_text_check_oil">Check Oil</string>
+    <string name="a_text_headlight">Headlight</string>
+    <string name="a_text_turn_on">Turn On</string>
+    <string name="a_text_turn_off">Turn Off</string>
+    <string name="a_text_normal">Normal</string>
+    <string name="a_text_high">High</string>
+    <string name="a_text_dimmable_light">Dimmable Light</string>
+    <string name="a_text_reset">Reset</string>
+    <string name="a_text_km_h">km/h</string>
+    <string name="a_text_fm">FM</string>
+    <string name="a_text_front">Front</string>
+    <string name="a_text_back">Back</string>
 
 </resources>

@@ -24,4 +24,9 @@
         android:icon="@drawable/automobile_icon"
         android:orderInCategory="103"
         app:showAsAction="always" />
+
+    <item android:id="@+id/option_about"
+        android:title="About"
+        android:orderInCategory="104"
+        app:showAsAction="never" />
 </menu>
