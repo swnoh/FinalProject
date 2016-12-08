@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cst2335.finalproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -53,6 +55,15 @@
             android:name=".AutomobileDrive"
             android:label="Drive"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <activity android:name=".OutsideWeather" />
+        <activity android:name=".GarageDoor" />
+        <activity android:name=".HouseSetting" />
+        <activity android:name=".TemperatureSetting" />
+        <activity android:name=".TimeSchedule" />
+        <activity android:name=".TempSchedule" />
+        <activity android:name=".ViewTempSchedule" />
+
     </application>
 
 </manifest>
