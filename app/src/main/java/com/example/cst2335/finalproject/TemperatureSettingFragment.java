@@ -51,8 +51,8 @@ public class TemperatureSettingFragment extends Fragment {
     Button viewTempScheduleButton;
     Button deleteTempButton;
     EditText deleteTempInput;
-    String returnSelectedTemp = null;
-    String returnSelectedTime = null;
+    String returnSelectedTemp = "";
+    String returnSelectedTime = "";
     CoordinatorLayout snackBar;
 
     DBHelper dbHelper;
@@ -133,11 +133,11 @@ public class TemperatureSettingFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                if(returnSelectedTime == null || returnSelectedTemp == null){
+                if(returnSelectedTime.length() == 0 || returnSelectedTemp.length() == 0){
                     Toast.makeText(getActivity(), "Please select time and temperature to add a schedule.",Toast.LENGTH_SHORT).show();
                 }
 
-                if(returnSelectedTime.length() != 0 || returnSelectedTemp.length() != 0){
+                if(returnSelectedTime.length() != 0 && returnSelectedTemp.length() != 0){
                     dbHelper = new DBHelper(getContext());
                     SQLiteDatabase sqliteDB = dbHelper.getWritableDatabase();
                     ContentValues newValues = new ContentValues();
@@ -146,6 +146,8 @@ public class TemperatureSettingFragment extends Fragment {
                     sqliteDB.insert(dbHelper.TABLE_NAME, null, newValues);
                     sqliteDB.close();
                     //dbHelper.close();
+                    returnSelectedTime = "";
+                    returnSelectedTemp = "";
                     Snackbar snackbar_addedtemp = Snackbar
                             .make(snackBar, "New temperature schedule added to database.", Snackbar.LENGTH_LONG);
                    /* Changes the colour of the text in the snackbar */
@@ -154,8 +156,7 @@ public class TemperatureSettingFragment extends Fragment {
                     TextView textView = (TextView) snackbarView.findViewById(android.support.design.R.id.snackbar_text);
                     textView.setTextColor(Color.YELLOW);
                     snackbar_addedtemp.show();
-                    returnSelectedTime = null;
-                    returnSelectedTemp = null;
+
                 }//end if*/
             }//end onClick()
         });

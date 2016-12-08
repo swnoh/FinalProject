@@ -8,7 +8,7 @@ import android.util.Log;
 
 /**
  * Contain database information of the temperature schedule and process the creation, upgrade,
- * and downgrade of the database .
+ * and downgrade of the database.
  ********************************************************************************/
 
 public class DBHelper extends SQLiteOpenHelper {
@@ -18,7 +18,7 @@ public class DBHelper extends SQLiteOpenHelper {
      *******************************************************************************************/
         protected static final String ACTIVITY_NAME = "DBHelper_Activity";
         protected static final String DATABASE_NAME = "TempSchedule.db";  //db file
-        protected static final int DATABASE_VERSION = 4;
+        protected static final int DATABASE_VERSION = 1;
         protected static final String TABLE_NAME = "TempScheduleTable";
 
         /* Column names */
@@ -35,7 +35,7 @@ public class DBHelper extends SQLiteOpenHelper {
         /**
         * Default Constructor
         ***************************************************************************/
-        public DBHelper() { }
+        //public DBHelper() { }
 
         /**
          * Constructor

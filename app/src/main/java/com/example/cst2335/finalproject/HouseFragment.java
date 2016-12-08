@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,11 +27,11 @@ import android.widget.Toast;
  *    Help
  *********************************************************************************/
 public class HouseFragment extends Fragment {
-    protected static final String ACTIVITY_NAME = "HouseFragment";
 
     /**
      * Attributes for the HouseFragment
      ***********************************************************************************/
+    protected static final String ACTIVITY_NAME = "HouseFragment";
     ListView myListView;
     private ArrayAdapter<String> listViewAdapter;  //Array adapters tells the ListView what to display
 
@@ -41,10 +43,9 @@ public class HouseFragment extends Fragment {
 
     /**
      * Set the view and inflate layout
-     *********************************************************************************/
+     *******************************************************************************************/
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_house, container, false);
         displayListView(view);
@@ -52,15 +53,17 @@ public class HouseFragment extends Fragment {
         return view;
     }//end onCreateView()
 
+
     /**
-     * Set ListView and Array Adaptor in order to display the list (house features)
+     * Set Array Adaptor in order to display data to listview (house features)
      ************************************************************************************/
-    public void displayListView(View view){
-        myListView = (ListView) view.findViewById(R.id.HouseFragListView);
-        String[] listItem = {"Garage Door", "House Temperature", "Outside Temperature", "Help"};
-        listViewAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1,listItem);
-        myListView.setAdapter(listViewAdapter);
+   public void displayListView(View view){
+         myListView = (ListView) view.findViewById(R.id.HouseFragListView);
+         String[] listItem = {"Garage Door", "House Temperature", "Outside Temperature", "Help"};
+         listViewAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1,listItem);
+         myListView.setAdapter(listViewAdapter);
     }//end displayListView()
+
 
     /**
      * Set listview action based on the house feature item selection
@@ -112,5 +115,7 @@ public class HouseFragment extends Fragment {
                 })//end setPositiveButton
                 .show(); //display dialogue box
 
-    }//end createDiaglogue
-}//end HouseFragment class
+    }//end createDiaglogue()
+
+
+}/***** END HouseFragment class *******/

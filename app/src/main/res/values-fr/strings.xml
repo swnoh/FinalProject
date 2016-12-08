@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProjetFinal</string>
+    <string name="action_settings">Paramétres</string>
+    <string name="title_activity_main">Télécommande integlligente</string>
+    <string name="main_automobile">Voiture</string>
+    <string name="main_house">Maison</string>
+    <string name="main_kitchen">Cuisine</string>
+    <string name="main_livingroom">Salle de séjour</string>
+
+    <!-- Garage Door -->
+    <string name="openGarageButton">Garage Ouvert</string>
+    <string name="closeGarageButton">Garage Fermer</string>
+    <string name="lightON_OFF">Lumiere(Allumée/Éteinte)</string>
+
+    <!-- House Temperature -->
+    <string name="houseTempLabel">Votre maison est actuellement fixée a</string>
+    <string name="houseTempTextview">Température de la maison</string>
+    <string name="tempSettingButton">Réglage de la température</string>
+    <string name="TemperatureSettingLabel">Réglage de la température</string>
+    <string name="setTimeButton">Sélectionner une heure</string>
+    <string name="setTempButton">Sélectionner une température</string>
+    <string name="createSchedule">Insérer un nouveau calendrier de température</string>
+    <string name="setTempSchedule">Afficher la liste des horaires</string>
+    <string name="delete">Supprimer la grille de température</string>
+    <string name="deleteLabel">Entrer l\'identifiant de la clé pour de température</string>
+
+
+    <!-- Outside Weather -->
+    <string name="currentTempTextview">Température actuelle</string>
+    <string name="minTempTextview">Température minimale</string>
+    <string name="maxTempTextview">Température maximale</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

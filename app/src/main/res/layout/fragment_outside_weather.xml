@@ -5,15 +5,6 @@
     tools:context="com.example.cst2335.finalproject.OutsideWeatherFragment"
     android:id="@+id/fragment_outside_weather">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView3"
-        android:minWidth="200dp"
-        android:minHeight="200dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="20dp"
@@ -29,8 +20,7 @@
         android:text="@string/maxTempTextview"
         android:id="@+id/textView5"
         android:layout_below="@+id/textView4"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/textView4" />
+        android:layout_alignParentStart="true" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -51,5 +41,42 @@
         android:layout_below="@+id/imageView3"
         android:layout_alignEnd="@+id/imageView3"
         android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:minWidth="200dp"
+        android:minHeight="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minValue"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/maxValue"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxValue"
+        android:layout_above="@+id/progressBar"
+        android:layout_below="@+id/textView4"
+        android:layout_alignEnd="@+id/currentValue"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentValue"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
 
 </RelativeLayout>

@@ -38,10 +38,16 @@ public class OutsideWeatherFragment extends Fragment {
      *******************************************************************************/
     protected static final String ACTIVITY_NAME = "OutsideWeather_Fragment";
     private ImageView weatherImage;
+    /* temperature labels */
     private TextView currentTempTextView;
     private TextView minTempTextView;
     private TextView maxTempTextView;
+    /* temperature values*/
+    private TextView currentValueTextView;
+    private TextView minValueTextView;
+    private TextView maxValueTextView;
     private ProgressBar progressBar;
+
 
     /**
      * Default constructor
@@ -63,9 +69,12 @@ public class OutsideWeatherFragment extends Fragment {
 
        /* Initialize widgets */
        weatherImage = (ImageView) view.findViewById(R.id.imageView3);
-       currentTempTextView = (TextView) view.findViewById(R.id.textView3);
-       minTempTextView = (TextView) view.findViewById(R.id.textView4);
-       maxTempTextView = (TextView) view.findViewById(R.id.textView5);
+        currentTempTextView = (TextView) view.findViewById(R.id.textView3);
+        minTempTextView = (TextView) view.findViewById(R.id.textView4);
+        maxTempTextView = (TextView) view.findViewById(R.id.textView5);
+        currentValueTextView = (TextView) view.findViewById(R.id.currentValue);
+        minValueTextView = (TextView) view.findViewById(R.id.minValue);
+        maxValueTextView = (TextView) view.findViewById(R.id.maxValue);
        progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
 
        progressBar.setVisibility(View.VISIBLE);
@@ -142,7 +151,6 @@ public class OutsideWeatherFragment extends Fragment {
                             if (tagName.equals("weather")) {
                                 iconName = parser.getAttributeValue(null, "icon");
                             }
-
                     }
                     eventType = parser.next();
                 }
@@ -229,10 +237,12 @@ public class OutsideWeatherFragment extends Fragment {
         protected void onPostExecute(String result) {
             progressBar.setVisibility(View.INVISIBLE);
             weatherImage.setImageBitmap(weatherPic);
-            currentTempTextView.setText("Current temperature: " + currentTemperature);
-            minTempTextView.setText("Minimum temperature: " + minTemperature);
-            maxTempTextView.setText("Maximum temperature: " + maxTemperature);
+            currentValueTextView.setText(currentTemperature);
+            minValueTextView.setText(minTemperature);
+            maxValueTextView.setText(maxTemperature);
         }//end onPostExecute()
     }
 
- }/* END OutsideWeatherFragment Class */
+ }/**** END OutsideWeatherFragment Class *****/
+
+
