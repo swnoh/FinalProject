@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cst2335.finalproject.TemperatureSettingFragment">
+
+      <Button
+        android:text="@string/setTimeButton"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/setTimeButton" />
+
+    <Button
+        android:text="@string/setTempButton"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setTimeButton"
+        android:layout_alignStart="@+id/setTimeButton"
+        android:layout_marginTop="0dp"
+        android:id="@+id/setTempButton" />
+
+    <Button
+        android:text="@string/createSchedule"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addNewSchedule"
+        android:layout_below="@+id/setTempButton"
+        android:layout_alignStart="@+id/setTempButton"
+        android:layout_alignEnd="@+id/setTimeButton" />
+
+    <Button
+        android:text="@string/setTempSchedule"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addNewSchedule"
+        android:layout_alignStart="@+id/addNewSchedule"
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewTempSchedule"
+        android:layout_alignEnd="@+id/setTempButton" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/snackBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="0dp"
+            tools:context="com.example.cst2335.finalproject.TemperatureSettingFragment">
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/deleteLabel"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:textSize="15sp"
+            android:id="@+id/deleteTempLabel" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="245dp"
+            android:ems="10"
+            android:id="@+id/deleteInput"
+            android:hint="1-10"
+            android:inputType="number" />
+
+        <Button
+            android:text="@string/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:id="@+id/deleteButton" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
