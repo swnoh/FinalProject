@@ -17,7 +17,6 @@ import android.widget.Toast;
 // Created By Zobayed Abedin
 
 
-
 public class tvremote extends AppCompatActivity {
 
     @Override
